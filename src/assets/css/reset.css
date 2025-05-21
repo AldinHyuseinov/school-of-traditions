@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid darkgreen;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
