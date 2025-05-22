@@ -39,7 +39,6 @@ li {
   background-color: rgba(242, 233, 220, 0.81);
   /* background-color: rgba(255, 255, 255, 0.81); */
   box-shadow: var(--basic-shadow);
-  margin-bottom: 1em;
   height: 5em;
 }
 

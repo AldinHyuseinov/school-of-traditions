@@ -29,6 +29,9 @@ export default function Navigation() {
       <nav className="main-nav">
         <ul className="nav">
           <li>
+            <a href="/обучение">Обучение</a>
+          </li>
+          <li>
             <a href="/създателите">За нас</a>
           </li>
           <li>

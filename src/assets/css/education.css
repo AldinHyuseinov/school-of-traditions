@@ -1,0 +1,23 @@
+@import url("info-layout.css");
+
+.showcase {
+  min-height: 400px;
+  width: 100%;
+  background: url("src/assets/images/classroom.jpg") no-repeat center;
+  background-size: cover;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase h1 {
+  padding-inline: 2em;
+  max-width: 25em;
+  color: #fff;
+  font-weight: 1000;
+  font-size: clamp(24px, 5vw, 100px);
+  font-style: italic;
+  text-align: center;
+  text-shadow: var(--red-clr) 4px 4px 5px;
+}

@@ -8,6 +8,7 @@ const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Error = lazy(() => import("./pages/Error"));
+const Education = lazy(() => import("./pages/Education"));
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/създателите" element={<About />} />
             <Route path="/контакти" element={<Contact />} />
+            <Route path="/обучение" element={<Education />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>

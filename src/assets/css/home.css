@@ -1,3 +1,5 @@
+@import url("info-layout.css");
+
 .home {
   display: flex;
   flex-direction: column;
@@ -44,40 +46,4 @@
   font-weight: 900;
   font-style: italic;
   text-align: center;
-}
-
-.media {
-  max-width: 334px;
-  min-width: 270px;
-}
-
-.media img {
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.description-container {
-  display: flex;
-  gap: 1em;
-  padding: 5em 5em 0em 5em;
-}
-
-.description h2 {
-  font-style: italic;
-  text-align: center;
-}
-
-.description p {
-  text-align: justify;
-}
-
-@media (width <= 750px) {
-  .description-container {
-    flex-wrap: wrap;
-  }
-
-  .media {
-    max-width: 100%;
-  }
 }
