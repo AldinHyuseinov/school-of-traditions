@@ -7,6 +7,14 @@ export default function Contact() {
   return (
     <main className="contact">
       <h1>Свържете се с нас</h1>
+
+      <iframe
+        frameBorder="0"
+        scrolling="no"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%91%D0%B5%D0%B4%D0%B5%D0%BD,%204817+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        title="Google Map"
+      ></iframe>
+
       <div className="contact-details">
         <div className="contact-details-item">
           <div className="contact-details-icon">

@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f2e9dc;
+}
+
 * {
   margin: 0;
   padding: 0;
