@@ -2,4 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+}
+
+.contact-details-item {
+  cursor: pointer;
+}
+
+.contact-details-icon p {
+  padding: 0;
+}
+
+.contact-details-icon svg {
+  width: 44px;
+  height: 44px;
+  fill: #fff;
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.4em;
+}
+
+.contact-details-icon:hover svg {
+  background-color: var(--red-clr);
+  transition: background-color 0.3s;
+}
+
+.contact-details-icon:hover p,
+.contact-details-item:hover p {
+  color: var(--red-clr);
+  transition: background-color 0.3s;
 }
