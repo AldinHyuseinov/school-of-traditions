@@ -1,4 +1,5 @@
 import "../assets/css/education.css";
+import classroomBg from "../assets/images/classroom.jpg";
 import folkloreImg from "../assets/images/children.png";
 import bowls from "../assets/images/bowls.jpg";
 import child from "../assets/images/child.jpg";
@@ -11,7 +12,13 @@ export default function Education() {
 
   return (
     <main className="education">
-      <section className="showcase">
+      <section
+        className="showcase"
+        style={{
+          background: `url(${classroomBg}) no-repeat center`,
+          backgroundSize: "cover",
+        }}
+      >
         <h1>Обучение</h1>
       </section>
 

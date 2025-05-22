@@ -3,7 +3,6 @@
 .showcase {
   min-height: 400px;
   width: 100%;
-  background: url("src/assets/images/classroom.jpg") no-repeat center;
   background-size: cover;
   padding: 3rem;
   display: flex;
