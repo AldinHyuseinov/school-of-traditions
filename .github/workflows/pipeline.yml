@@ -1,4 +1,4 @@
-name: Docker Image CI/CD
+name: CI/CD
 
 on:
   push:
@@ -38,3 +38,18 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/school_trad_app:latest
+<<<<<<< HEAD
+=======
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.MY_RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.MY_RENDER_API_KEY }}
+          wait-for-success: true
+>>>>>>> 7d8c5be4bd4110e854ad1bca08519cd2685bfb69
