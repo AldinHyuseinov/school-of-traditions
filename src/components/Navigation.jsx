@@ -32,6 +32,9 @@ export default function Navigation() {
             <a href="/обучение">Обучение</a>
           </li>
           <li>
+            <a href="/програма">Програма</a>
+          </li>
+          <li>
             <a href="/партньори">Партньори</a>
           </li>
           <li>
