@@ -1,9 +1,12 @@
 .media {
+  padding: 1em;
   max-width: 334px;
   min-width: 270px;
 }
 
 .media img {
+  border: 3px dashed var(--red-clr);
+  box-shadow: var(--basic-shadow);
   border-radius: 50%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -12,7 +15,14 @@
 .description-container {
   display: flex;
   gap: 1em;
-  padding: 5em 5em 0em 5em;
+  /* padding: 5em 5em 0em 5em; */
+  /* New design */
+  max-width: 80%;
+  padding: clamp(1em, 5vw, 5em);
+  margin: 1em auto;
+  border: 1px solid var(--red-clr);
+  border-radius: 1em;
+  box-shadow: var(--basic-shadow);
 }
 
 .description h2 {
@@ -20,7 +30,7 @@
   text-align: center;
 }
 
-@media (width <= 750px) {
+@media (width <= 769px) {
   .description-container {
     flex-wrap: wrap;
   }

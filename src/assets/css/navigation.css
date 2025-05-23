@@ -68,8 +68,7 @@ li ul {
 }
 
 .main-nav ul li,
-.main-nav ul li ul li,
-.user-side-nav ul li {
+.main-nav ul li ul li {
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -105,7 +104,7 @@ li ul {
   fill: rgba(0, 0, 0, 0.65);
 }
 
-@media (width <= 769px) {
+@media (width <= 833px) {
   .site-header {
     justify-content: space-between;
     align-items: center;
@@ -134,12 +133,14 @@ li ul {
   }
 
   #nav-toggle:checked ~ .main-nav .nav {
-    max-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    max-width: 60%;
     transform: translateY(2.5em);
     transition: transform 0.4s linear(0 0%, 0.27 27.21%);
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 0.5em;
-    width: 10em;
     position: absolute;
     right: 0;
     left: 0;
