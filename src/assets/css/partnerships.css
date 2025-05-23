@@ -1,0 +1,17 @@
+.partners {
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  padding-top: 1em;
+  padding-inline: 2em;
+  text-align: justify;
+}
+
+@media (width <= 900px) {
+  .showcase {
+    background-size: cover !important;
+    background-position: 0px !important;
+  }
+}

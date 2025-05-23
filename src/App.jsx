@@ -9,6 +9,7 @@ const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Error = lazy(() => import("./pages/Error"));
 const Education = lazy(() => import("./pages/Education"));
+const Partnerships = lazy(() => import("./pages/Partnerships"));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/създателите" element={<About />} />
             <Route path="/контакти" element={<Contact />} />
             <Route path="/обучение" element={<Education />} />
+            <Route path="/партньори" element={<Partnerships />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Suspense>

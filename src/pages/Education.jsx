@@ -1,4 +1,5 @@
-import "../assets/css/education.css";
+import "../assets/css/banner.css";
+import "../assets/css/info-layout.css";
 import classroomBg from "../assets/images/classroom.jpg";
 import folkloreImg from "../assets/images/children.png";
 import bowls from "../assets/images/bowls.jpg";
