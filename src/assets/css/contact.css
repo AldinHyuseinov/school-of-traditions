@@ -46,5 +46,5 @@ iframe {
 .contact-details-icon:hover p,
 .contact-details-item:hover p {
   color: var(--red-clr);
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
