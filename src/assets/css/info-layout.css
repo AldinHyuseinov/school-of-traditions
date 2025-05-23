@@ -20,10 +20,6 @@
   text-align: center;
 }
 
-.description p {
-  text-align: justify;
-}
-
 @media (width <= 750px) {
   .description-container {
     flex-wrap: wrap;
