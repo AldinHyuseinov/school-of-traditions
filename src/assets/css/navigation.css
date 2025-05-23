@@ -108,7 +108,7 @@ li ul {
 @media (width <= 674px) {
   .site-header {
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     gap: 1em;
     padding-inline: 1.2em;
   }
@@ -120,40 +120,36 @@ li ul {
   #nav-toggle-label {
     display: block;
     position: relative;
+    width: 18.38px;
+    height: 15.75px;
+  }
+
+  #nav-toggle:checked ~ .main-nav > ul {
+    padding: 1em;
   }
 
   #nav-toggle:checked ~ .main-nav > ul > li {
     display: block;
+    border-bottom: 1px solid rgba(161, 32, 36, 0.81);
   }
 
   #nav-toggle:checked ~ .main-nav .nav {
+    max-height: 200px;
+    transform: translateY(2.5em);
+    transition: transform 0.4s linear(0 0%, 0.27 27.21%);
     flex-direction: column;
     gap: 0.5em;
     width: 10em;
     position: absolute;
     right: 0;
     left: 0;
-    top: 4.5em;
-    background-color: #f2e9dc;
+    /* top: 5.03em; */
+    background-color: rgba(242, 233, 220, 0.81);
     box-shadow: 3px 9px 1em 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--gray-clr);
     border-top: 0;
     border-left: 0;
     border-radius: 0.5em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
-
-  #nav-toggle:checked ~ .main-nav .nav::before {
-    content: "";
-    display: block;
-    border-top: 1px solid var(--gray-clr);
-  }
-
-  #nav-toggle:checked ~ .main-nav .nav li ul {
-    top: 0;
-    left: 9.99em;
-    width: 50vw;
-    box-shadow: 9px 2px 1em rgba(0, 0, 0, 0.25);
   }
 }
