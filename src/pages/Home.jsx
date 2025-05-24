@@ -3,6 +3,7 @@ import folkloreImg from "../assets/images/bulgarian-folk.jpg";
 import folkloreImg2 from "../assets/images/bulgarian-folk2.png";
 import Gallery from "../components/Gallery";
 import Info from "../components/Info";
+import News from "../components/News";
 import useTitle from "../hooks/useTitle";
 
 export default function Home() {
@@ -51,6 +52,7 @@ export default function Home() {
       />
 
       <Gallery />
+      <News />
     </main>
   );
 }
