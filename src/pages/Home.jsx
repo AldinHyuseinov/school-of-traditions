@@ -1,6 +1,7 @@
 import "../assets/css/home.css";
 import folkloreImg from "../assets/images/bulgarian-folk.jpg";
 import folkloreImg2 from "../assets/images/bulgarian-folk2.png";
+import Gallery from "../components/Gallery";
 import Info from "../components/Info";
 import useTitle from "../hooks/useTitle";
 
@@ -48,6 +49,8 @@ export default function Home() {
           обединява – в нея всяко дете може да намери място, роля и повод за гордост.`,
         ]}
       />
+
+      <Gallery />
     </main>
   );
 }
