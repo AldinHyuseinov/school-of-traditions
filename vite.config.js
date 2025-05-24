@@ -7,6 +7,6 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: 4173,
-    allowedHosts: ["school-trad-app.onrender.com"],
+    allowedHosts: ["school-trad-app.onrender.com", "folklorehouse.onrender.com"],
   },
 });
