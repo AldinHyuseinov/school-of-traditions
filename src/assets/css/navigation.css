@@ -112,39 +112,37 @@ li ul {
     padding-inline: 1.2em;
   }
 
-  .main-nav ul li {
-    display: none;
+  .main-nav .nav {
+    position: absolute;
   }
 
-  #nav-toggle-label {
+  #nav-toggle {
     display: block;
     position: relative;
     width: 18.38px;
     height: 15.75px;
+    background-color: transparent;
   }
 
-  #nav-toggle:checked ~ .main-nav > ul {
+  .main-nav > ul {
     padding: 1em;
   }
 
-  #nav-toggle:checked ~ .main-nav > ul > li {
+  .main-nav > ul > li {
     display: block;
     border-bottom: 1px solid rgba(161, 32, 36, 0.81);
   }
 
-  #nav-toggle:checked ~ .main-nav .nav {
+  .main-nav .nav.open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     max-width: 60%;
     transform: translateY(2.5em);
-    transition: transform 0.4s linear(0 0%, 0.27 27.21%);
-    /* flex-direction: column; */
-    gap: 0.5em;
-    position: absolute;
-    right: 0;
-    left: 0;
-    /* top: 5.03em; */
+    padding: 1em;
     background-color: rgba(242, 233, 220, 0.81);
     box-shadow: 3px 9px 1em 0px rgba(0, 0, 0, 0.25);
     border-top: 0;
@@ -152,5 +150,57 @@ li ul {
     border-radius: 0.5em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    gap: 0.5em;
+    right: 0;
+    left: 0;
+    animation: navOpenAnim 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .main-nav .nav.closed {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    max-width: 60%;
+    padding: 1em;
+    background-color: rgba(242, 233, 220, 0.81);
+    box-shadow: 3px 9px 1em 0px rgba(0, 0, 0, 0.25);
+    border-top: 0;
+    border-left: 0;
+    border-radius: 0.5em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    gap: 0.5em;
+    right: 0;
+    left: 0;
+    animation: navCloseAnim 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}
+
+@keyframes navOpenAnim {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(2.5em);
+    visibility: visible;
+  }
+}
+
+@keyframes navCloseAnim {
+  from {
+    opacity: 1;
+    transform: translateY(2.5em);
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
   }
 }
