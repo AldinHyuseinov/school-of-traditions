@@ -28,6 +28,7 @@
 .description h2 {
   font-style: italic;
   text-align: center;
+  text-wrap: balance;
 }
 
 @media (width <= 769px) {

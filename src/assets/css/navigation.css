@@ -133,15 +133,12 @@ li ul {
     border-bottom: 1px solid rgba(161, 32, 36, 0.81);
   }
 
-  .main-nav .nav.open {
-    visibility: visible;
-    pointer-events: auto;
-    opacity: 1;
+  .main-nav .nav.open,
+  .main-nav .nav.closed {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     max-width: 60%;
-    transform: translateY(2.5em);
     padding: 1em;
     background-color: rgba(242, 233, 220, 0.81);
     box-shadow: 3px 9px 1em 0px rgba(0, 0, 0, 0.25);
@@ -153,6 +150,13 @@ li ul {
     gap: 0.5em;
     right: 0;
     left: 0;
+  }
+
+  .main-nav .nav.open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(2.5em);
     animation: navOpenAnim 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
@@ -160,21 +164,6 @@ li ul {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    max-width: 60%;
-    padding: 1em;
-    background-color: rgba(242, 233, 220, 0.81);
-    box-shadow: 3px 9px 1em 0px rgba(0, 0, 0, 0.25);
-    border-top: 0;
-    border-left: 0;
-    border-radius: 0.5em;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    gap: 0.5em;
-    right: 0;
-    left: 0;
     animation: navCloseAnim 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 }

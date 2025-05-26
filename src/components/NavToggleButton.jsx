@@ -1,8 +1,9 @@
 import "../assets/css/nav-toggle.css";
 
-export default function NavToggleButton({ open, setOpen }) {
+export default function NavToggleButton({ buttonRef, open, setOpen }) {
   return (
     <button
+      ref={buttonRef}
       id="nav-toggle"
       className="nav-toggle-btn"
       onClick={() => setOpen(!open)}

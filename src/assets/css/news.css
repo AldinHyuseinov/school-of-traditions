@@ -42,6 +42,7 @@
   color: var(--red-clr);
   padding-bottom: 1em;
   text-align: center;
+  text-wrap: balance;
 }
 
 @media (width >= 600px) {

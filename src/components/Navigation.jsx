@@ -1,12 +1,32 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavToggleButton from "./NavToggleButton";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+  const navRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        open &&
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
 
   return (
     <header className="site-header">
-      <NavToggleButton open={open} setOpen={setOpen} />
+      <NavToggleButton buttonRef={buttonRef} open={open} setOpen={setOpen} />
 
       <a href="/" className="branding">
         <div className="logo">
@@ -15,7 +35,7 @@ export default function Navigation() {
         </div>
       </a>
 
-      <nav className="main-nav">
+      <nav className="main-nav" ref={navRef}>
         <ul className={`nav ${open ? "open" : "closed"}`}>
           <li>
             <a href="/">Начало</a>
