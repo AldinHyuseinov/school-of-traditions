@@ -2,5 +2,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2em;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2em;
+}
+
+main > h2 {
+  font-size: 2.5em;
+  color: var(--red-clr);
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+main > p {
+  font-size: 1.3em;
+  color: rgb(78, 54, 32);
+  border-radius: 1em;
+  padding: 1.2em 2em;
+  margin-top: 0.5em;
+  max-width: 400px;
 }

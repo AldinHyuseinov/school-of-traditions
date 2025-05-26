@@ -4,14 +4,30 @@
   flex-direction: column;
   align-items: center;
   margin-inline: auto;
-  padding-top: 1em;
-  padding-inline: 2em;
-  text-align: justify;
+  margin-block: 2em;
+  padding: 2em 2.5em;
+  background: #fff7ed;
+  border-radius: 1em;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.07);
+  border-left: 6px solid var(--red-clr);
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: rgb(78, 54, 32);
+}
+
+.partners p {
+  margin-bottom: 1.3em;
 }
 
 @media (width <= 900px) {
   .showcase {
     background-size: cover !important;
     background-position: 0px !important;
+  }
+
+  .partners {
+    padding: 1.2em 0.7em;
+    margin-inline: 1em;
+    border-left: 3px solid var(--red-clr);
   }
 }
